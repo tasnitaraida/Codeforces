@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(void)
+{
+    int a,b,c,max=0;
+    int x[6];
+    int i=0;
+ 
+    scanf("%d%d%d",&a,&b,&c);
+ 
+    x[0]=a+b*c;
+    x[1]=a*(b+c);
+    x[2]=a*b*c;
+    x[3]=(a+b)*c;
+    x[4]=a*b+c;
+    x[5]=a+b+c;
+ 
+    for(i=0;i<6;i++)
+    {
+        if(x[i]>max)
+        {
+            max=x[i];
+        }
+    }
+    printf("%d",max);
+}
